@@ -36,3 +36,8 @@ If you find this work useful, please cite:
   year={2025}
 }
 ```
+
+## 🙏 Acknowledgement
+
+This repository builds upon the Diffusion Policy [Diffusion Policy codebase](https://diffusion-policy.cs.columbia.edu/) by Chi et al. We thank the authors for making their implementation publicly available, which greatly facilitated the development of our DP-AG framework.
+
