@@ -18,7 +18,7 @@
   <meta property="og:title" content="Act to See, See to Act: Diffusion-Driven Perception–Action Interplay for Adaptive Policies">
   <meta property="og:description" content="DP-AG tightly couples perception and action with diffusion guidance to yield adaptive, robust manipulation policies.">
   <meta property="og:url" content="https://dp-ag.github.io/">
-  <meta property="og:image" content="https://dp-ag.github.io/static/images/carousel1.jpg">
+  <meta property="og:image" content="https://dp-ag.github.io/static/images/preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <!-- <meta property="og:image:alt" content=""> -->
@@ -299,10 +299,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Diffusion Policy with Action Guidance (DP-AG) unifies perception and control in a single stochastic process. The agent reasons jointly over latent sensory embeddings and action trajectories, re-sampling both as new observations arrive. This bidirectional flow keeps perception calibrated to what the robot is doing while steering the policy with the freshest perceptual evidence.
-          </p>
-          <p>
-            By reinforcing both sides of the loop, DP-AG yields smoother, more adaptive behaviour in dynamic manipulation tasks. Across Robomimic, Franka Kitchen, Push-T, and Dynamic Push-T benchmarks, the method improves success rates by up to 13% in simulation and 23% in real-world trials relative to strong diffusion-policy baselines.
+			Existing imitation learning methods decouple perception and action, which overlooks the causal reciprocity between sensory representations and action execution that humans naturally leverage for adaptive behaviors. To bridge this gap, we introduce Action-Guided Diffusion Policy (DP-AG), a unified representation learning that explicitly models a dynamic interplay between perception and action through probabilistic latent dynamics. DP-AG encodes latent observations into a Gaussian posterior via variational inference and evolves them using an action-guided SDE, where the Vector–Jacobian Product (VJP) of the diffusion policy's noise predictions serves as a structured stochastic force driving latent updates. To promote bidirectional learning between perception and action, we introduce a cycle-consistent contrastive loss that organizes the gradient flow of the noise predictor into a coherent perception–action loop, enforcing mutually consistent transitions in both latent updates and action refinements. Theoretically, we derive a variational lower bound for the action-guided SDE, and prove that the contrastive objective enhances continuity in both latent and action trajectories. Empirically, DP-AG significantly outperforms state-of-the-art methods across simulation benchmarks and real-world UR5 manipulation tasks. As a result, our DP-AG offers a promising step toward bridging biological adaptability and artificial policy learning.
           </p>
         </div>
       </div>
@@ -451,9 +448,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project
           </p>
 
         </div>
