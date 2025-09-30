@@ -290,6 +290,42 @@ body {
   font-weight: 500;
 }
 
+.robomimic-video-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+.robomimic-video-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.robomimic-video-row::-webkit-scrollbar-thumb {
+  background-color: rgba(37, 99, 235, 0.4);
+  border-radius: 999px;
+}
+
+.robomimic-video-card {
+  flex: 0 0 260px;
+  max-width: 260px;
+}
+
+.robomimic-video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.robomimic-video-card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
