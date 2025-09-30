@@ -335,9 +335,21 @@ body {
   border-radius: 999px;
 }
 
+.real-world-video-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .real-world-video-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .real-world-video-card {
-  flex: 0 0 350px;
-  max-width: 350px;
+  width: 100%;
+  max-width: none;
 }
 
 .real-world-video-card video {
