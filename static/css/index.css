@@ -326,6 +326,15 @@ body {
   line-height: 1.4;
 }
 
+.real-world-video-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.real-world-video-row::-webkit-scrollbar-thumb {
+  background-color: rgba(37, 99, 235, 0.4);
+  border-radius: 999px;
+}
+
 .real-world-video-card {
   flex: 0 0 350px;
   max-width: 350px;
