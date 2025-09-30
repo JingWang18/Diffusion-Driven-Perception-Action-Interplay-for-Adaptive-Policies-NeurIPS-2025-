@@ -320,6 +320,12 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
+	  <div class="item">
+        <img src="static/images/overview_gap.png" alt="Second research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          {\bf Comparison of Different Observation Representation Styles.} (a) Conventional methods map observation features directly to actions. (b) DP models action distributions through incremental denoising from white noise, conditioned on observation features. (c) DP-AG refines observation features via noise predictions, establishing a mutually reinforcing cycle between perception and action.
+        </h2>
+      </div>
        <div class="item">
         <img src="static/images/preview.png" alt="First research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
@@ -327,21 +333,21 @@
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/synthetic.png" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          DP-AG boosts success rates by up to 13% on dynamic Push-T tasks over the best prior diffusion policy.
+          Regression results on irregular spirals. Left: Trajectories and latent dynamics predicted by the Base Flow. Right: The VJP-Guided Flow continuously refines latents through output-guided corrections, which results in smoother and more coherent trajectories in both output and latent spaces.
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <img src="static/images/pusht_results.png" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         Robust latent rollouts preserve contact-rich manipulation sequences without mode collapse.
+         Target coverage score on Push-T and Dynamic Push-T tasks. img and kp refer to the observation modalities: RGB images or 2D keypoints.
        </h2>
      </div>
      <div class="item">
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <img src="static/images/ur5_results.png" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Real-world experiments report 23% higher task completion rates with smoother gripper motions.
+        Performance on Real-World UR5 Tasks. Mean and standard deviation are reported.
       </h2>
     </div>
   </div>
