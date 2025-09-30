@@ -326,6 +326,23 @@ body {
   line-height: 1.4;
 }
 
+.real-world-video-card {
+  flex: 0 0 350px;
+  max-width: 350px;
+}
+
+.real-world-video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.real-world-video-card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
