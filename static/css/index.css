@@ -301,7 +301,7 @@ body {
 }
 
 .robomimic-video-row::-webkit-scrollbar {
-  height: 6px;
+  height: 8px;
 }
 
 .robomimic-video-row::-webkit-scrollbar-thumb {
@@ -310,8 +310,8 @@ body {
 }
 
 .robomimic-video-card {
-  flex: 0 0 260px;
-  max-width: 260px;
+  flex: 0 0 300px;
+  max-width: 300px;
 }
 
 .robomimic-video-card video {
